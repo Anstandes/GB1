@@ -11,43 +11,47 @@ public class Main {
        int in = 2147483647;
        long lo = 9223372036854775807L;
        float fl = 3.14f;
-       double doub = 3.141592653589793238462643;
+       double doub = 3.141_592_653_589_793_238_462_643d;
        char ch = '*';
        boolean boo = false;
        //  Третье задание
-        int i = Math();
+        float i = Math(3.14f, 2.15f,4f,4f);
         System.out.println(i);
         //четвертое задание
-        int r = Check();
-        if (r>10 && r <20) {
+        /*boolean r = isSumRegion10to20(12f, 3f);
+        if (r) {
             System.out.println(true);
         }
-        if (r<10 || r>20) {
+        else{
             System.out.println(false);
         }
+        */
+        System.out.println(isSumRegion10to20(12f, 3f));
         //пятое задание
         Number();
         //шестое задание
         check();
-        //седьмое задание
+        //Cедьмое задание
         Name();
 
 
     }
 
-    static int Math()
+    static float Math(float a,float b,float c, float d)
     {
-        int a = 2;
-        int b = 3;
-        int c = 4;
-        int d = 1;
         return (a * (b + (c / d)));
     }
-    static int Check()
+    /*static boolean isSumRegion10to20(float a, float b)
     {
-        int a = 5;
-        int b = 10;
-        return (a+b);
+        float sum = a+b;
+        boolean isSum = sum>=10 && sum<=20;
+        return isSum;
+    }*/
+
+    static boolean isSumRegion10to20(float a, float b)
+    {
+        float sum = a+b;
+        return (sum>=10 && sum<=20);
     }
     static void Number()
     {
