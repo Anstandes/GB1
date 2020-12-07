@@ -73,6 +73,6 @@ public class Main {
     static void Name()
     {
         String a = "Алексей";
-        System.out.println("Привет," + a);
+        System.out.println("Привет," + a + "!");
     }
 }
